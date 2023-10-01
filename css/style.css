@@ -1,0 +1,188 @@
+/*
+Colour Palette
+https://www.designersbootcamp.org/ Used inspect
+#e3bdf5 Purple
+#348554 Green
+#eeff00 Bright Yellow
+#324158 Dark Blue 
+
+*/
+/* Global Styles
+------------------------*/ 
+html { 
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+} /* from CSS essential training chap 5 video 4 box model fix */
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+img {
+width: 300px;
+    }
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 55px;
+    margin-bottom: 0;
+
+}
+h2 {
+    margin: 0;
+    font-size: 35px;
+}
+h1, h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+
+}
+.item-details h3 ~ p { 
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.divider > section {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Profile
+------------------------*/ 
+header {
+    color: #FFFFFF;
+    background: #348554;
+}
+header h2 {
+    color: #eeff00;
+   padding-top: 0;
+}
+
+/* Projects
+------------------------*/ 
+.projects {
+    background: #324158;
+    color: white;
+}
+.projects h2{
+    color: #e3bdf5;
+}
+.projects a {
+    color: #e3bdf5;
+}
+.projects .btn {
+    text-decoration: none;
+    background: #e3bdf5;
+    color: #324158;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(170, 137, 38, 50);
+    color: #e3bdf5;
+
+}
+.project-item {
+    overflow: hidden;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+
+
+/* Education
+------------------------*/ 
+.education {
+    background-image: url(../images/rodion-kutsaiev-IJ25m7fXqtk-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding-bottom: 100px;
+}
+.education p {
+    width: 60%;
+}
+
+
+/* Work Experience
+------------------------*/ 
+.work-experience {
+    background: #e3bdf5;
+    color: #324158;
+}
+
+/* Contact Info
+------------------------*/ 
+footer {
+    background: #348554;
+    color: #FFFFFF;
+}
+footer h2 {
+    color: #eeff00;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+/* Responsive
+------------------------*/
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+    float: left;
+    margin-right: 20px;
+    }
+    
+        .job-item {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 5px;
+        }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }           
+}
+@media screen and (max-width: 749px) {
+h1 {
+        font-size: 45px;
+        margin-bottom: 0;
+
+    }
+h2 {
+    font-size: 30px;
+}
+.contact-list a {
+    padding: 5px;
+}
+}
