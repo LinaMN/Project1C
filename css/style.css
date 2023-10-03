@@ -74,42 +74,48 @@ h3 {
 /* Profile
 ------------------------*/ 
 header {
-    color: #FFFFFF;
-    background: #868365;
+    color: #F1ECE2;
+    background: #10302a;
 }
 header h1 {
     padding-bottom: 0;
 }
 header h3 {
-    color: white;
+    color: #F1ECE2;
    padding-top: 0;
    margin-top: 0;
 }
+/* Bio
+------------------------*/ 
+.bio {
+    background: #CAA988  ;
+}
+
 
 
 /* Projects
 ------------------------*/ 
 .projects {
-    background: #324158;
-    color: white;
+    background: #F1ECE2;
+    color: #10302a;
 }
 .projects h2{
-    color: #e3bdf5;
+    color: #10302a;
 }
 .projects a {
-    color: #e3bdf5;
+    color: #6b796a;
 }
 .projects .btn {
     text-decoration: none;
-    background: #e3bdf5;
-    color: #324158;
+    background: #6b796a;
+    color: white;
     padding: 8px;
     border-radius: 4px;
     display: inline-block;
 }
 .projects .btn:hover {
-    background: rgba(170, 137, 38, 50);
-    color: #e3bdf5;
+    background: #d1e0d6;
+    color: white;
 
 }
 .project-item {
@@ -136,18 +142,18 @@ header h3 {
 /* Work Experience
 ------------------------*/ 
 .work-experience {
-    background: #e3bdf5;
-    color: #324158;
+    background: #d1e0d6;
+    color: #10302a;
 }
 
 /* Contact Info
 ------------------------*/ 
 footer {
-    background: #348554;
+    background: #10302a;
     color: #FFFFFF;
 }
 footer h2 {
-    color: #eeff00;
+    color: #F1ECE2;
 }
 .contact-list {
     list-style-type: none;
