@@ -4,7 +4,6 @@ Colour Palette
 #6b796a Medium Green
 #d1e0d6 Aqua
 #caa988 Rose
-
 */
 /* Global Styles
 ------------------------*/ 
@@ -68,7 +67,34 @@ h3 {
 .divider > section:last-of-type {
     border-bottom: none;
 }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #F1ECE2;
+  overflow: hidden;
+}
+/* Navigation
+------------------------*/ 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #10302a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #d1e0d6;
+  color: #6b796a;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
 /* Profile
 ------------------------*/ 
