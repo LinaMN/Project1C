@@ -88,7 +88,8 @@ header h3 {
 /* Bio
 ------------------------*/ 
 .bio {
-    background: #CAA988  ;
+    background: #d1e0d6;
+    color: #10302a;
 }
 
 
@@ -106,8 +107,9 @@ header h3 {
     color: #6b796a;
 }
 .projects .btn {
+    font-variant: small-caps;
     text-decoration: none;
-    background: #6b796a;
+    background: #CAA988;
     color: white;
     padding: 8px;
     border-radius: 4px;
@@ -115,7 +117,7 @@ header h3 {
 }
 .projects .btn:hover {
     background: #d1e0d6;
-    color: white;
+    color: #6b796a;
 
 }
 .project-item {
@@ -150,7 +152,7 @@ header h3 {
 ------------------------*/ 
 footer {
     background: #10302a;
-    color: #FFFFFF;
+    color: #d1e0d6;
 }
 footer h2 {
     color: #F1ECE2;
