@@ -118,9 +118,9 @@ header h2 {
 /* Education
 ------------------------*/ 
 .education {
-    background-image: url(../images/rodion-kutsaiev-IJ25m7fXqtk-unsplash.jpg);
+    background-image: url(../photos/annie-spratt-JASnV-RxhOQ-unsplash.jpg);
     background-size: cover;
-    background-position: bottom right;
+    background-position: top;
     padding-bottom: 100px;
 }
 .education p {
