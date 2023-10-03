@@ -70,6 +70,7 @@ h3 {
 /* Navigation
 ------------------------ https://www.w3schools.com/howto/howto_js_topnav.asp*/
 /* Add a black background color to the top navigation */
+
 .topnav {
   background-color: #F1ECE2;
   overflow: hidden;
@@ -94,6 +95,17 @@ h3 {
 .topnav a.active {
   background-color: #d1e0d6;
   color: #6b796a;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /* Profile
