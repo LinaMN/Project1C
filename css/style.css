@@ -221,7 +221,12 @@ footer h2 {
     .contact-list{
         display: flex;
         justify-content: center;
-    }           
+    }  
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }         
 }
 @media screen and (max-width: 749px) {
 h1 {
@@ -235,4 +240,11 @@ h2 {
 .contact-list a {
     padding: 5px;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+
 }
