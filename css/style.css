@@ -74,8 +74,9 @@ h3 {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr, 5fr, 200px, 5fr, 5fr, 5fr;
+    grid-template-rows: 5fr, 1fr, 0.5fr, 1fr, 5fr, 5fr;
     grid-row-gap: 50px;
+    column-gap: 50px;
     background-color: #F1ECE2;
 
 }
@@ -137,6 +138,7 @@ h3 {
     background-color: #F1ECE2;
 }
 .grid .image {
+    margin: 0 auto;
     animation-name: move;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -195,7 +197,6 @@ h3 {
 ------------------------*/
 .flip h3 { margin: 0;
 font-size: 3em;
-font-weight: 900;
 text-align: center;
 perspective: 1000px;
 transform-style: preserve-3d;
@@ -236,6 +237,53 @@ transform-style: preserve-3d;
         transform: rotate(-180deg);
     }
 }
+/* Animation 6
+------------------------*/
+.square {
+    width: 100px;
+        height: 100px;
+        background-color: #10302a;
+        position: relative;
+        animation-name: example;
+        animation-duration: 5s;
+        animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    
+}
+@keyframes example {
+    0% {
+        background-color: #6b796a;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: #CAA988;
+        left: 50px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: #d1e0d6;
+        left: 50px;
+        top: 50px;
+    }
+
+    75% {
+        background-color: #FFFFFF;
+        left: 0px;
+        top: 50px;
+    }
+
+    100% {
+        background-color: #10302a;
+        left: 0px;
+        top: 0px;
+    }
+}
+
 
 
 
