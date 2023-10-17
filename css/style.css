@@ -205,13 +205,20 @@ footer h2 {
 
 /* Grid
 ------------------------*/
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
 
+.grid .btn {
+text-decoration: none;
+background: #CAA988;
+color: white;
+padding: 20px;
+border-radius: 4px;
 }
+
 /* Responsive
 ------------------------*/
 @media screen and (min-width: 750px) {
