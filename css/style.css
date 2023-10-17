@@ -73,10 +73,11 @@ h3 {
 ------------------------*/
 .grid {
     display: grid;
+    grid-template:none;
+    justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 50px;
-    column-gap: 50px;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 50px 50px;
     background-color: #F1ECE2;
 
 }
@@ -110,9 +111,6 @@ h3 {
 ------------------------*/
 .grid h2 {
     color: #6b796a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     animation-name: scaleIn;
     animation-duration: 5s;
     animation-delay: 1s;
@@ -137,7 +135,7 @@ h3 {
 .color {
     background-color: #F1ECE2;
 }
-.grid .image {
+ .image {
     margin: 0 auto;
     animation-name: move;
     animation-duration: 3s;
@@ -148,7 +146,7 @@ h3 {
     animation-play-state: paused;
 }
 
-.grid .image:hover {
+.image:hover {
     animation-play-state: running;
 }
 @keyframes move {
@@ -198,7 +196,6 @@ h3 {
 ------------------------*/
 .flip h3 { margin: 0;
 font-size: 3em;
-text-align: center;
 perspective: 1000px;
 transform-style: preserve-3d;
 }
