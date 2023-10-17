@@ -75,12 +75,16 @@ h3 {
     display: grid;
     grid-template:none;
     justify-items: center;
+    justify-content: center;
+    align-content: space-evenly;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     gap: 50px 50px;
     background-color: #F1ECE2;
 
 }
+
+
 
 /* Animation 1 Button
 ------------------------*/
@@ -447,7 +451,28 @@ footer h2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.1fr 0.1fr 0.1fr;
-    }         
+    }    
+        .griditema {
+            grid-column: 1 / 2;
+        }
+    
+        .griditemb {
+            grid-column: 2 / 3;
+        }
+        .griditemc {
+                    grid-column: 1 / 2;
+        }
+        
+        .griditemd {
+                    grid-column: 2 / 3;
+        }
+        .griditeme {
+                    grid-column: 1 / 2;
+        }
+                
+        .griditemf {
+                    grid-column: 2 / 3;
+        }
 }
 @media screen and (max-width: 749px) {
 h1 {
