@@ -86,11 +86,11 @@ h3 {
     grid-row-gap: 50px;
 
 }
-.grid .image {
+.grid .image:hover {
     animation-name: move;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 6;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
