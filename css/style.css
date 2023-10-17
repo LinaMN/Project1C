@@ -72,7 +72,7 @@ h3 {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .grid .btn {
@@ -83,14 +83,21 @@ h3 {
     background: #CAA988;
     color: white;
     padding: 20px;
-    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .grid .btn:hover {
-    transform: scale(2);
+    transform: scale(1.1);
     background: #d1e0d6;
     color: #10302a;
     border-radius: 10px;
+}
+.grid h2 {
+    color: #6b796a;
+    display: flex;
+    justify-content: center;
 }
 /* Navigation
 ------------------------ https://www.w3schools.com/howto/howto_js_topnav.asp*/
@@ -252,7 +259,7 @@ footer h2 {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr 1fr;
     }         
 }
 @media screen and (max-width: 749px) {
