@@ -74,7 +74,7 @@ h3 {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr, 5fr, 0.1fr, 5fr, 5fr, 5fr;
+    grid-template-rows: 5fr, 5fr, 200px, 5fr, 5fr, 5fr;
     grid-row-gap: 50px;
     background-color: #F1ECE2;
 
@@ -162,22 +162,36 @@ h3 {
 /* Animation 4 
 ------------------------*/
 .step h1 {
+    overflow: hidden;
+
+        border-right: .15em solid #10302a;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        /* Adjust as needed */
+        animation:
+            typing 3s steps(4, end),
+            blinking .75s step-end infinite;
+    }
+    /*border-radius: 10px;
+    border-style: solid;
+    border: #10302a;
     color: #10302a;
     text-align: center;
     animation: typing 3s steps(5),
-        blinking 0.5s steps(1) infinite;
+               blinking 0.5s steps(1) infinite;*/
 }
 @keyframes typing {
     0% {
-        width: 0px;
+        width: 0
     }
     100% {
-        width: 100%;
+        width: 100%
     }
 }
 @keyframes blinking {
     0%, 100% {
-        border-color: transparent;
+        border-color: transparent
     }
     50% {
         border-color: #CAA988;
