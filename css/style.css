@@ -162,39 +162,32 @@ h3 {
 /* Animation 4 
 ------------------------*/
 .step h1 {
+    font-family: monospace;
+    color: #6b796a;
     overflow: hidden;
-
-        border-right: .15em solid #10302a;
-        white-space: nowrap;
-        margin: 0 auto;
-        letter-spacing: .15em;
-        /* Adjust as needed */
-        animation:
-            typing 3s steps(4, end),
-            blinking .75s step-end infinite;
+    border-right: .15em solid #10302a;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 2.5em;
+    animation:
+            typing 3.5s steps(4, end),
+            blinking .5s steps(1) infinite;
     }
-    /*border-radius: 10px;
-    border-style: solid;
-    border: #10302a;
-    color: #10302a;
-    text-align: center;
-    animation: typing 3s steps(5),
-               blinking 0.5s steps(1) infinite;*/
-}
+
 @keyframes typing {
-    0% {
+    from {
         width: 0
     }
-    100% {
+    to {
         width: 100%
     }
 }
 @keyframes blinking {
-    0%, 100% {
+    from, to {
         border-color: transparent
     }
     50% {
-        border-color: #CAA988;
+        border-color: #CAA988
     }
 }
 
