@@ -75,7 +75,7 @@ h3 {
 }
 @keyframes move {
     0% {transform: translateX(0);}
-    100% {transform: translateX(800px)}
+    100% {transform: translateX(50%)}
 }
 /* Grid
 ------------------------*/
@@ -89,6 +89,9 @@ h3 {
 .grid .image {
     animation-name: move;
     animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
 }
 
 .grid .btn {
