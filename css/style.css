@@ -212,11 +212,20 @@ footer h2 {
 }
 
 .grid .btn {
+transition: background .5s ease-in,
+            transform .3s .1s ease-in-out,
+            border-radius .4s ease-in;
 text-decoration: none;
 background: #CAA988;
 color: white;
 padding: 20px;
 border-radius: 4px;
+}
+.grid .btn:hover {
+    transform: scale(1.5);
+    background: #d1e0d6;
+    color: #10302a;
+    border-radius: 10px;
 }
 
 /* Responsive
