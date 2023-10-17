@@ -74,7 +74,7 @@ h3 {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr, 1fr, 0.5fr, 1fr, 5fr, 5fr;
+    grid-template-rows: 5fr 1fr 0.5fr 1fr 5fr 5fr;
     grid-row-gap: 50px;
     column-gap: 50px;
     background-color: #F1ECE2;
@@ -246,7 +246,7 @@ transform-style: preserve-3d;
         position: relative;
         animation-name: example;
         animation-duration: 5s;
-        animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+        animation-timing-function: cubic-bezier(.17, .67, .83, .67)
         animation-delay: 0.5s;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
