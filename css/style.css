@@ -298,6 +298,8 @@ span:nth-child(4) {
 .topnav {
   background-color: #F1ECE2;
   overflow: hidden;
+  display: flex;
+  justify-content: end;
 } 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -305,8 +307,16 @@ span:nth-child(4) {
   color: #10302a;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration:wavy;
   font-size: 17px;
+  font-weight: 900;
+}
+.logo-image{
+    width: 50%;
+    height: auto;
+    
+    overflow: hidden;
+    
 }
 
 /* Change the color of links on hover */
@@ -315,11 +325,7 @@ span:nth-child(4) {
   color: #6b796a;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #d1e0d6;
-  color: #6b796a;
-}
+
 
 .sticky {
   position: fixed;
