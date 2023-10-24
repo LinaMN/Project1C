@@ -562,7 +562,7 @@ h2 {
         transform: translateX(12.2%);
     }
 }
-/* code from https://codepen.io/nelledejones/pen/gOOPWrK*/
+/* edited code from https://codepen.io/nelledejones/pen/gOOPWrK*/
 #littlefishgreen {
   animation: gelatine 10s infinite;
   animation-direction: alternate;
@@ -605,7 +605,7 @@ h2 {
     }
 }
 
-
+/* bubbles edited code from https://www.codewithrandom.com/2023/07/23/41-css-bubble-animations-and-effects/ */
 
 #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8 {
   animation-duration: 10s;
