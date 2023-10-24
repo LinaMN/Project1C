@@ -491,3 +491,26 @@ h2 {
 }
 
 }
+/* Animation
+------------------------*/ 
+#redfish {
+    margin: 0 auto;
+    animation-name: swim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+@keyframes swim {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10%);
+    }
+}
+ 
