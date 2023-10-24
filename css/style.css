@@ -562,6 +562,26 @@ h2 {
         transform: translateX(12.2%);
     }
 }
+#littlefishgreen {
+  animation: gelatine 10s infinite;
+  animation-direction: alternate;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1); }
+  50% { transform: scale(1.1, 1); }
+  75% { transform: scale(1, 1.0); }
+}
+#littlefishorange {
+  animation: gelatines 15s infinite;
+  animation-direction: alternate;
+}
+@keyframes gelatines {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.8, 1.1); }
+  50% { transform: scale(0.9, 0.9); }
+  75% { transform: scale(1, 0.9); }
+}
  
 #orangefish {
     margin: 0 auto;
@@ -635,4 +655,16 @@ h2 {
     transform: translateY(-400px);
     opacity: 0;
   }
+}
+#littlefishpink {
+    animation: flipDown 3s ease-in-out reverse;
+    animation-delay: 2s;
+    transform-origin: 50% 70%;
+    animation-iteration-count: 2;
+}
+
+@keyframes flipDown {
+    to {
+        transform: rotate(360deg);
+    }
 }
