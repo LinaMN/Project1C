@@ -493,6 +493,56 @@ h2 {
 }
 /* Animation
 ------------------------*/ 
+/* Ocean wave animation. I edited code from https://codepen.io/tedmcdo/pen/PqxKXg
+------------------------*/ 
+
+.ocean { 
+  height: 20%;
+  width:100%;
+  position:fixed;
+  bottom:0;
+  left:0;
+  background: #015871;
+  opacity: 0.2;
+  
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+.blue {
+    background-color: #90ADA6;
+}
 #redfish {
     margin: 0 auto;
     animation-name: swim;
@@ -517,10 +567,10 @@ h2 {
     margin: 0 auto;
     animation-name: kiss;
     animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode:backwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(.17, .67, .83, .67)
     animation-play-state: running;
 }
 
@@ -533,4 +583,56 @@ h2 {
         transform: translateX(-12.2%);
     }
 }
- 
+
+
+
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8 {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: bubbleYAnimFrames;
+  animation-timing-function: ease-out;
+ animation-direction:unset;
+}
+#b1{
+    animation-delay: 0s;
+    
+}
+#b2{
+    animation-delay: .2s;
+}
+#b3{
+    animation-delay: 1s;
+}
+#b4{
+    animation-delay: 0.7s;
+}
+#b5{
+    animation-delay: 0.4s;
+}
+#b6{
+    animation-delay: 0.5s;
+}
+#b7{
+    animation-delay: 0.1s;
+}
+#b8{
+    animation-delay: 0.3s;
+}
+@keyframes bubbleYAnimFrames {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  95% {
+    transform: translateY(-280px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+}
