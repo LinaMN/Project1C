@@ -302,21 +302,21 @@ span:nth-child(4) {
   justify-content: end;
 } 
 /* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   color: #10302a;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration:wavy;
-  font-size: 17px;
-  font-weight: 900;
+  text-decoration:none;
+  font-size: 25px;
+  font-weight: bolder;
 }
 .logo-image{
-    width: 50%;
+    width: 45%;
     height: auto;
-    
     overflow: hidden;
-    
+    margin-top: 8.5%;
+    margin-left: 15%;
 }
 
 /* Change the color of links on hover */
@@ -325,7 +325,10 @@ span:nth-child(4) {
   color: #6b796a;
 }
 
-
+.link {
+    padding: 14px 16px;
+    
+}
 
 .sticky {
   position: fixed;
