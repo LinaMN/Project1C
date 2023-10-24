@@ -496,21 +496,41 @@ h2 {
 #redfish {
     margin: 0 auto;
     animation-name: swim;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
     animation-play-state: running;
 }
-
 @keyframes swim {
     0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(10%);
+        transform: translateX(12.2%);
+    }
+}
+ 
+#orangefish {
+    margin: 0 auto;
+    animation-name: kiss;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-play-state: running;
+}
+
+@keyframes kiss {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-12.2%);
     }
 }
  
