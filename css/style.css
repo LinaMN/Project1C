@@ -15,6 +15,7 @@ html {
 } /* from CSS essential training chap 5 video 4 box model fix */
 
 body {
+    background-color: #F1ECE2;
     color: black;
     margin: 0;
     padding: 0;
@@ -71,14 +72,22 @@ h3 {
     border-bottom: none;
 }
 /* Navigation--------------------------- */
+nav {
+    margin: 1rem auto;
+    background: #F1ECE2;
+    overflow: hidden;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background: #F1ECE2;
     display: flex;
     justify-content: right;
     align-items: center;
+    
 }
 nav a {
     color: #10302a;
@@ -97,10 +106,7 @@ nav a:hover {
     text-align: left;
     
 }
-.logo a:hover {
-    background-color: #F1ECE2;
-    
-}
+
 
 /* New Page MOTION  ------------------------*/
 
@@ -488,7 +494,7 @@ h2 {
 
 .ocean { 
   height: 20%;
-  width:100%;
+  width:90%;
   position:fixed;
   bottom:0;
   left:0;
@@ -659,3 +665,4 @@ h2 {
         transform: rotate(360deg);
     }
 }
+nav {background-color: #F1ECE2;}
