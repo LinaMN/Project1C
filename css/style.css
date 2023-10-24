@@ -661,7 +661,7 @@ h2 {
     animation: flipDown 3s ease-in-out reverse;
     animation-delay: 2s;
     transform-origin: 50% 70%;
-    animation-iteration-count: 2;
+    animation-iteration-count: 6;
 }
 
 @keyframes flipDown {
