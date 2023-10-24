@@ -7,6 +7,7 @@ Colour Palette
 */
 /* Global Styles
 ------------------------*/ 
+
 html { 
     box-sizing: border-box;
 }
@@ -71,10 +72,13 @@ h3 {
 .divider > section:last-of-type {
     border-bottom: none;
 }
+
+}
 /* Navigation--------------------------- */
+
 nav {
+    background-color: #6b796a;
     margin: 1rem auto;
-    background: #F1ECE2;
     overflow: hidden;
   position: -webkit-sticky; /* For Safari */
   position: sticky;
@@ -90,7 +94,7 @@ nav ul {
     
 }
 nav a {
-    color: #10302a;
+    color:white;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 400;
@@ -98,7 +102,7 @@ nav a {
     display: block;
 }
 nav a:hover {
-    background-color: #d1e0d6;
+    
     color: #CAA988;
 }
 .logo {
@@ -331,14 +335,14 @@ span:nth-child(4) {
 /* Profile
 ------------------------*/ 
 header {
-    color: #F1ECE2;
-    background: #10302a;
+    color: #10302a;
+    background: #F1ECE2;
 }
 header h1 {
     padding-bottom: 0;
 }
 header h3 {
-    color: #F1ECE2;
+    color: #6b796a;
    padding-top: 0;
    margin-top: 0;
 }
@@ -364,7 +368,7 @@ header h3 {
     color: #6b796a;
 }
 .projects .btn {
-    font-variant: small-caps;
+    
     text-decoration: none;
     background: #CAA988;
     color: white;
@@ -390,7 +394,7 @@ header h3 {
 .education {
     background-image: url(../photos/annie-spratt-JASnV-RxhOQ-unsplash.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     padding-bottom: 100px;
 }
 .education p {
@@ -421,6 +425,7 @@ footer h2 {
 .contact-list a {
     padding: 15px;
     display: inline-block;
+    color: #CAA988;
 }
 
 
@@ -665,4 +670,36 @@ h2 {
         transform: rotate(360deg);
     }
 }
-nav {background-color: #F1ECE2;}
+.green {
+    background-color: #6b796a;
+    padding: 1rem;
+    overflow: hidden;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
+.cream {
+    background-color: #F1ECE2;
+    padding: 1rem;
+    overflow: hidden;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
+.cream a {
+    color: #10302a;
+}
+.blueback {
+    background-color: #d1e0d6;
+    padding: 1rem;
+    overflow: hidden;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
+.blueback a {
+    color: #10302a;
+}
+.lightblue {
+    background-color: #d1e0d6;
+}
