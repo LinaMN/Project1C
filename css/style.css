@@ -689,7 +689,7 @@ h2 {
 .cream a {
     color: #10302a;
 }
-.blueback {
+.nav {
     background-color: #d1e0d6;
     padding: 1rem;
     overflow: hidden;
@@ -697,7 +697,7 @@ h2 {
   position: sticky;
   top: 0;
 }
-.blueback a {
+.nav a {
     color: #10302a;
 }
 .lightblue {
