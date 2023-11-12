@@ -7,6 +7,7 @@ Colour Palette
 */
 /* Global Styles
 ------------------------*/ 
+
 html { 
     box-sizing: border-box;
 }
@@ -15,10 +16,11 @@ html {
 } /* from CSS essential training chap 5 video 4 box model fix */
 
 body {
+    background-color: #F1ECE2;
     color: black;
     margin: 0;
     padding: 0;
-    font-family: 'quattrocento sans', sans-serif;
+    font-family: 'Space Mono', monospace;
     font-size: 17px;
     line-height: 1.5;
 }
@@ -39,12 +41,15 @@ h1 {
 h2 {
     margin: 0;
     font-size: 35px;
+    
 }
 h1, h2 {
-    font-family: 'quattrocento', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 h3 {
     margin-bottom: 0;
+    font-weight: 400;
+  font-style: italic;
 }
 .item-details h3 + p {
     font-style: italic;
@@ -67,6 +72,46 @@ h3 {
 .divider > section:last-of-type {
     border-bottom: none;
 }
+
+}
+/* Navigation--------------------------- */
+
+nav {
+    background-color: #6b796a;
+    margin: 1rem auto;
+    overflow: hidden;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+nav a:hover {
+    
+    color: #CAA988;
+}
+.logo {
+    flex-basis: 1000px;
+    text-align: left;
+    
+}
+
+
 /* New Page MOTION  ------------------------*/
 
 /* Grid
@@ -83,7 +128,6 @@ h3 {
     background-color: #F1ECE2;
 
 }
-
 
 
 /* Animation 1 Button
@@ -250,7 +294,7 @@ span:nth-child(4) {
         position: relative;
         animation-name: example;
         animation-duration: 5s;
-        animation-timing-function: cubic-bezier(.17, .67, .83, .67)
+        animation-timing-function: cubic-bezier(.17, .67, .83, .67);
         animation-delay: 0.5s;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
@@ -288,61 +332,17 @@ span:nth-child(4) {
     }
 }
 
-
-
-
-/* Navigation
------------------------- https://www.w3schools.com/howto/howto_js_topnav.asp*/
-/* Add a black background color to the top navigation */
-
-.topnav {
-  background-color: #F1ECE2;
-  overflow: hidden;
-} 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #10302a;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #d1e0d6;
-  color: #6b796a;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #d1e0d6;
-  color: #6b796a;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
 /* Profile
 ------------------------*/ 
 header {
-    color: #F1ECE2;
-    background: #10302a;
+    color: #10302a;
+    background: #F1ECE2;
 }
 header h1 {
     padding-bottom: 0;
 }
 header h3 {
-    color: #F1ECE2;
+    color: #6b796a;
    padding-top: 0;
    margin-top: 0;
 }
@@ -368,7 +368,7 @@ header h3 {
     color: #6b796a;
 }
 .projects .btn {
-    font-variant: small-caps;
+    
     text-decoration: none;
     background: #CAA988;
     color: white;
@@ -394,7 +394,7 @@ header h3 {
 .education {
     background-image: url(../photos/annie-spratt-JASnV-RxhOQ-unsplash.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     padding-bottom: 100px;
 }
 .education p {
@@ -425,6 +425,7 @@ footer h2 {
 .contact-list a {
     padding: 15px;
     display: inline-block;
+    color: #CAA988;
 }
 
 
@@ -490,4 +491,215 @@ h2 {
     padding: 5px;
 }
 
+}
+/* Animation
+------------------------*/ 
+/* Ocean wave animation. I edited code from https://codepen.io/tedmcdo/pen/PqxKXg
+------------------------*/ 
+
+.ocean { 
+  height: 10%;
+  width:100%;
+  position:fixed;
+  bottom:0;
+  left:0;
+  background: #015871;
+  opacity: 0.2;
+  
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+.blue {
+    background-color: #90ADA6;
+}
+#redfish {
+    margin: 0 auto;
+    animation-name: swim;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-play-state: running;
+}
+@keyframes swim {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(12.2%);
+    }
+}
+/* edited code from https://codepen.io/nelledejones/pen/gOOPWrK*/
+#littlefishgreen {
+  animation: gelatine 10s infinite;
+  animation-direction: alternate;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1); }
+  50% { transform: scale(1.1, 1); }
+  75% { transform: scale(1, 1.0); }
+}
+#littlefishorange {
+  animation: gelatines 15s infinite;
+  animation-direction: alternate;
+}
+@keyframes gelatines {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.8, 1.1); }
+  50% { transform: scale(0.9, 0.9); }
+  75% { transform: scale(1, 0.9); }
+}
+ 
+#orangefish {
+    margin: 0 auto;
+    animation-name: kiss;
+    animation-duration: 5s;
+    animation-fill-mode:backwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+    animation-play-state: running;
+}
+
+@keyframes kiss {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-12.2%);
+    }
+}
+
+/* bubbles edited code from https://www.codewithrandom.com/2023/07/23/41-css-bubble-animations-and-effects/ */
+
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8 {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: bubbleYAnimFrames;
+  animation-timing-function: ease-out;
+ animation-direction:unset;
+}
+#b1{
+    animation-delay: 0s;
+    
+}
+#b2{
+    animation-delay: .2s;
+}
+#b3{
+    animation-delay: 1s;
+}
+#b4{
+    animation-delay: 0.7s;
+}
+#b5{
+    animation-delay: 0.4s;
+}
+#b6{
+    animation-delay: 0.5s;
+}
+#b7{
+    animation-delay: 0.1s;
+}
+#b8{
+    animation-delay: 0.3s;
+}
+@keyframes bubbleYAnimFrames {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  95% {
+    transform: translateY(-280px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+}
+#littlefishpink {
+    animation: flipDown 3s ease-in-out reverse;
+    animation-delay: 2s;
+    transform-origin: 50% 70%;
+    animation-iteration-count: 6;
+}
+
+@keyframes flipDown {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.green {
+    background-color: #6b796a;
+    padding: 1rem;
+    overflow: hidden;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
+.cream {
+    background-color: #F1ECE2;
+    padding: 1rem;
+    overflow: hidden;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
+.cream a {
+    color: #10302a;
+}
+.blueback {
+    background-color: #d1e0d6;
+    padding: 1rem;
+    overflow: hidden;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
+.blueback a {
+    color: #10302a;
+}
+.lightblue {
+    background-color: #d1e0d6;
 }
