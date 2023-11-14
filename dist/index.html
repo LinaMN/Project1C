@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>Lina Braun DGL 203</title>
   </head>
-<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Quattrocento:wght@400;700&display=swap"
-  rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <body>
-      <header class="brown">
-      <!-- ***********************  NAV / NAVIGATION  *********************** https://www.w3schools.com/howto/howto_js_topnav.asp-->
-      <nav class="green">
-        <ul>
-          <li><a href="newpage.html">Motion</a></li>
-          <li><a href="animation.html">Animation</a></li>
-        </ul>
-      </nav>
 
-        <!-- ***********************  ABOUT / PROFILE  *********************** -->
-        <div class="content-wrap">
-          <h1><img src="photos/Artboard 4.png"></h1>
-          <h3>Communications Designer</h3>
+  <body>
+      <!-- ***********************  NAV / NAVIGATION  *********************** -->
+      <header>
+        <div class="menu-btn">
+          <span class="menu-btn__burger">
+          </span>
         </div>
+        <nav class="nav">
+          <ul class="menu-nav">
+            <li class="menu-nav__item active">
+              <a href="index.html" class="menu-nav__link">
+                <img src="img/Artboard 4.png">
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="motion.html" class="menu-nav__link">
+                Motion
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="animation.html" class="menu-nav__link">
+                Animation
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <!-- ********************  BIO / BIO  ********************* -->
     <main>
@@ -158,5 +170,7 @@
         </div>
       </footer>
     </main>
+    <script src="https://kit.fontawesome.com/d18c071eae.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

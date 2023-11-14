@@ -1,5 +1,7 @@
 @import 'config';
 @import 'responsive';
+@import 'menu';
+
 
 body {
     background: $cream;
@@ -10,17 +12,17 @@ body {
     font-size: 17px;
 }
 main {
-    height: 100%;
-    width: 100%;
+     height: 100%;
+     width: 100%;
       
-        a {
+     a {
             color: $white;
             padding: 0.4rem;
             @include transition-ease;
 
-            &:hover {
+            &:hover 
+            {
                 color: $secondary-color;
             }
         }
     }
-}

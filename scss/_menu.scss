@@ -11,10 +11,10 @@
     &__burger {
         position: absolute;
         right: 0;
-        top: 0.5rem;
+        top: 0.4rem;
         width: 28px;
         height: 3px;
-        background: set-text-color($primary-color);
+        background: $black;
         @include transition-ease;
 
         &::before {
@@ -23,7 +23,7 @@
             top: -8px;
             width: 28px;
             height: 3px;
-            background-color: set-text-color($primary-color);
+            background-color: $black;
             @include transition-ease;
         }
 
@@ -33,7 +33,7 @@
             top: 8px;
             width: 20px;
             height: 3px;
-            background-color: set-text-color($primary-color);
+            background-color: $black;
             @include transition-ease;
         }
 
@@ -72,7 +72,7 @@
         justify-content: center;
         height: 100vh;
         overflow: hidden;
-        background: $primary-color;
+        background: $aqua;
         list-style-type: none;
         padding-right: 1rem;
         transform: translate(-100%);
@@ -91,7 +91,7 @@
             }
 
             &.active > a {
-                color: $secondary-color;
+                color: $dark-green;
             }
 
          }
@@ -104,7 +104,7 @@
             @include transition-ease;
 
             &:hover {
-              color: $secondary-color;  
+              color: $white;  
             }
         }
     }
