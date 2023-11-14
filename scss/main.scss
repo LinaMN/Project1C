@@ -1,0 +1,26 @@
+@import 'config';
+@import 'responsive';
+
+body {
+    background: $cream;
+    color: $black;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    line-height: 1.5;
+    font-size: 17px;
+}
+main {
+    height: 100%;
+    width: 100%;
+      
+        a {
+            color: $white;
+            padding: 0.4rem;
+            @include transition-ease;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
